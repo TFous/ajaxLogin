@@ -1,0 +1,667 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 14px;
+	color: #333;
+	font-family: Microsoft YaHei, tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+	background: #fff;
+	line-height: 24px;
+}
+
+fieldset, img {
+	border: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+
+em {
+	font-style: normal;
+}
+
+input, button, select, textarea {
+	outline: none;
+}
+
+textarea {
+	resize: none; /*禁用了文本的拖拉，尤其在谷歌下*/
+}
+
+a {
+	color: #5c5c5c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #d10000;
+	text-decoration: none;
+}
+
+del {
+	color: #939393;
+}
+
+.clearfix {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	clear: both;
+}
+
+.clearfix:after {
+	content: '';
+	visibility: hidden;
+	clear: both;
+	display: block;
+	height: 0;
+}
+
+/*初始化代码*/
+
+/*头部*/
+.header-hm{
+	width:970px;
+	margin:0px auto;
+	padding:4px 0px;
+	height: 30px;
+}
+.header-dl-hm dd{
+	float: left;
+	font-size: 12px;
+}
+.header-dl-hm dd:first-child{
+	margin-right: 120px;
+}
+
+
+.header-dl-hm dd.last-dd-hm{
+	float: right;
+	margin-right: 0px;
+}
+
+.header-dl-hm dd.last-dd-hm a{
+	font-size: 12px;
+	color:#5c5c5c;
+}
+.search-hm{
+	overflow:hidden;
+}
+.search-hm input[type="text"]{
+	width:208px;
+	height: 24px;
+	border:1px solid #cdcccc;
+	line-height: 24px;
+	padding-left: 4px;
+	float: left;
+	font-size: 12px;
+}
+
+.search-hm input[type="button"]{
+	width:54px;
+	height: 26px;
+	border:0px none;
+	vertical-align: middle;
+	float: left;
+	margin-left: 4px;
+	color:#fff;
+	background: #d10000;
+	cursor: pointer;
+}
+
+
+.topimg-hm{
+	position: relative;
+	height:107px;
+	width: 100%;
+	overflow: hidden;
+}
+.topimg-hm img.banner-hm{
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	margin-left: -960px;
+}
+
+.about-img{
+	overflow: hidden;
+	width:970px;
+	margin:0px auto;
+}
+.about-img img{
+	float: left;
+	margin-right: 20px;
+	margin-top: 12px;
+}
+
+
+.about-img img.title-img{
+	margin-top: 18px;
+}
+/*头部end*/
+.main-hm{
+	width:970px;
+	margin:0px auto;
+	margin-top:25px;
+}
+.left-hm{
+	width:690px;
+	float: left;
+}
+.right-hm{
+	width:260px;
+	float: right;
+}
+
+/*应用*/
+.soft-head-hm{
+	border-bottom:2px solid #cc0001;
+}
+
+.soft-head-hm h2{
+	background:url("../images/h2bg.png") no-repeat;
+	padding-left: 35px;
+	color: #FFF;
+	width: 90px;
+	height: 33px;
+	font-size:16px;
+	font-weight: 500;
+	line-height: 33px;
+}
+
+.soft-ul-hm{
+	overflow: hidden;
+	padding: 20px 0px;
+}
+.soft-ul-hm li{
+	float: left;
+	margin-left: 35px;
+	text-align: center;
+	/*width:60px;*/
+	color:#5e5e5e;
+	font-size: 14px;
+}
+.soft-ul-hm li a{
+	display: block;
+}
+.soft-ul-hm li a span{
+	color:#d10000;
+}
+/*应用end*/
+
+
+/*===========税务动态=============*/
+.swdt-hm h2{
+	background: #cc0001;
+	padding-left: 12px;
+	font-size: 16px;
+	color:#fff;
+	font-weight: 500;
+	height: 35px;
+	line-height: 35px;
+}
+
+.xm_noticec{
+	padding-top:8px;}
+.xm_noticec li{
+	background:url(../images/pt_lic.jpg) no-repeat left center;
+	height:31px;
+	line-height:31px;
+	padding-left:15px;}
+.xm_noticec li a{
+	color:#636363;
+	float:left;}
+.xm_noticec li span{
+	color:#a8a8a8;
+	font-size: 12px;
+	display:block;
+	float:right;}
+
+/*===========税务动态end=============*/
+
+
+/*消息评论列表*/
+.qzy_ltop {
+	padding: 15px 0px 0px 10px;
+	height: 30px;
+	background: url(../images/dtulbg.png) repeat-x scroll bottom center;
+	font-family: Microsoft YaHei;
+	color: #333333;
+	font-size: 14px;
+}
+.qzy_ltop div {
+	cursor: pointer;
+	line-height: 22px;
+	height: 30px;
+	float: left;
+	margin-left: 20px;
+}
+.qzy_xuanzhong {
+	margin: 0px auto 0px;
+	font-weight: bold;
+	background: url(../images/banner001.png) no-repeat scroll bottom center;
+}
+.qzy_ltop div {
+	cursor: pointer;
+	line-height: 22px;
+	height: 30px;
+	float: left;
+	margin-left: 20px;
+}
+.dl_fuwulian {
+	margin-bottom: 12px;
+}
+div.page {
+	padding: 3px;
+	margin: 3px;
+	text-align: center;
+	color: #3165b8;
+	font-size: 12px;
+}
+.dt_not {
+	padding-top: 11px;
+	width: 650px;
+	overflow: hidden;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #dcdcdc;
+}
+.dt_notl {
+	float: left;
+	width: 50px;
+	margin-right: 10px;
+}
+.dt_notl a {
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+.dt_notl a img {
+	width: 50px;
+	height: 50px;
+	border-radius: 2px;
+}
+.dt_notr {
+	width: 590px;
+	float: right;
+}
+.dt_notr ul li {
+	margin-right: 5px;
+}
+.dt_notr ul li h1 {
+	font-weight: normal;
+	color: #9e9e9e;
+	font-size: 13px;
+	line-height: 16px;
+}
+.dt_notr .dt_hand {
+	text-align: right;
+	line-height: 14px;
+	float: right;
+	height: 19px;
+	width: 400px;
+}
+.dt_pinl {
+	display: none;
+	overflow: hidden;
+	padding: 9px;
+	_padding-top: 4px;
+	border: 1px solid #db9;
+	background: #fff;
+}
+
+/*登录框*/
+.xm_login{
+	width:259px;
+}
+.xm_login h1{
+	font-weight:normal;
+	text-indent:10px;
+	background:#cc0001;
+	width:259px;
+	height:34px;
+	line-height:34px;
+	color:#fff;
+	font-size:14px;}
+.xm_loginb{
+	border:1px solid #fecbc8;
+	padding:0px 8px;
+	padding-top:17px;
+	border-top:none;}
+.xm_loginb ul li{
+	margin-bottom:17px;}
+.xm_login label{
+	color:#797979;
+	display:inline-block;
+	width:60px;
+	text-align:right;}
+.xm_login input{
+	border:1px solid #c8c8c8;
+	width:150px;
+	height:20px;
+	line-height:20px;}
+.xm_yzm{}
+.xm_yzm input{
+	width:85px;}
+.xm_yzm b{
+	background:url(../images/yzm.jpg) no-repeat left center;
+	width:60px;
+	height:21px;
+	display:inline-block;
+	margin-left:5px;
+	vertical-align:middle;}
+.xm_login li.xm_btn a{
+	display:inline-block;
+	background:url(../images/login_dlbg.jpg) no-repeat left center;
+	width:85px;
+	height:26px;
+	line-height:26px;
+	color:#fff;
+	text-align:center;
+	margin-left:21px;}
+.xm_login li.xm_btn a.xm_zhuc{
+	background:url(../images/login_zcbg.jpg) no-repeat left center;}
+.xm_login li.forgetmgs{
+	color:#797979;
+	margin-right:24px;
+	margin-bottom:3px;
+	text-align:right;}
+.xm_login li.forgetmgs a{
+	color:#797979;}
+
+
+/*通知公告*/
+.msg-hm{
+	margin-top: 20px;
+}
+.msg-hm h2{
+	font-size: 14px;
+	color:#d10000;
+	font-weight: 500;
+	line-height: 28px;
+	padding-left:8px;
+	background:url("../images/h2line.jpg") no-repeat bottom center;
+}
+.xmptl_sc{
+	padding:4px 6px;}
+.xmptl_sc ul{}
+.xmptl_sc ul li{
+	background:url(../images/pt_lic.jpg) no-repeat left center;
+	height:29px;
+	overflow: hidden;
+	line-height:29px;
+	padding-left:15px;}
+/*通知公告end*/
+
+
+/*专题专栏*/
+.imglink-hm img{
+	display: block;
+	margin-top: 12px;
+}
+/*专题专栏end*/
+
+
+/*群通讯录*/
+.qtxl_list{}
+.qtxl_list dl{
+	_width:247px;
+	overflow:hidden;
+	margin-top:8px;
+	padding-bottom:3px;
+	border-bottom:1px dotted #dbdbdb;}
+.qtxl_list dt{
+	width:50px;
+	float:left;}
+.qtxl_list dt img{
+	width:50px;
+	height:50px;
+	border-radius:3px;}
+.qtxl_list dd{
+	width:185px;
+	float:right;}
+.qtxl_list dd h1{
+	height:22px;
+	line-height:22px;
+	font-size:13px;}
+.qtxl_list dd h1 a{
+	float:right;
+	display:block;
+	margin-left:12px;}
+.qtxl_list dd h1 a.txnam{
+	float:left;
+	height:16px;
+	line-height:16px;
+	color:#333;
+	margin-left:0px;}
+.qtxl_list dd h1 a.txljsdh{
+	background:url(../images/xing_wei.png) no-repeat right center;
+	width:19px;
+	height:13px;}
+.qtxl_list dd h1 a.txlfsx{
+	background:url(../images/weixin_wei.png) no-repeat left center;
+	width:22px;
+	height:18px;}
+.qtxl_list dd p{}
+.qtxl_list dd p span{
+	color:#0a8cd2;}
+/*橙色滚动条样式*/
+/*滚动条*/
+.qtxl_list{
+	width: 259px;
+	height:358px;
+	margin-top:8px;}
+.qtxl_list .div_scroll {
+	width: 100%;
+	height:358px;
+	overflow: auto;
+	float: left;}
+.qtxl_list .scroll_container {
+	overflow: hidden;
+	position: relative;}
+.qtxl_list .scroll_absolute {
+	position: absolute;}
+.qtxl_list .scroll_vertical_bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 8px;
+	height: 100%;
+	background: #ff9000;
+	margin: 0;
+	padding: 0;
+	border-radius: 3px;}
+.qtxl_list .scroll_track {
+	position: relative;
+	background-color: #f4f2f2;}
+.qtxl_list .scroll_drag {
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	background:#ff9000;}
+.qtxl_list .scroll_arrow {
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+	background-color: #369DB4;}
+.qtxl_list .scroll_vertical_bar .scroll_arrow {
+	height: 16px;}
+
+/*公共底部样式*/
+.xm_foot{
+	padding-bottom:10px;
+	margin-top:20px;
+	background:#f6f6f6;
+	padding-top:20px;
+	border-top:2px solid #d4272e;}
+.xm_foot p{
+	font-size:13px;
+	text-align:center;}
+.xm_foot p span{
+	padding-left:5px;
+	padding-right:5px;}
+
+
+/*登录后*/
+.ptdl_msg{
+	float:right;}
+.ptdl_msg ul li{
+	float:left;
+	margin-left:20px;}
+.ptdl_msg ul li.xm_user{
+	height:28px;
+	line-height:28px;}
+.ptdl_msg ul li.xm_user a{
+	color:#df303c;}
+.ptdl_msg ul li.xm_user a img{
+	width:26px;
+	height:26px;
+	border-radius:3px;
+	margin-top:1px;
+	display:block;
+	float:left;}
+.ptdl_msg ul li.xm_user a b{
+	display:block;
+	float:left;
+	margin-left:6px;
+	font-weight:normal;
+	color:#df303c;}
+.ptdl_msg ul li a.red_zi{
+	color:#df303c;}
+.ptdl_msg ul li.cut_wq{
+	height:28px;
+	background:url(../images/arr_bom.png) no-repeat right center;
+	padding-right:12px;}
+.ptdl_msg ul li.cut_wq b{
+	font-weight:normal;
+	cursor:pointer;
+	width: 130px;
+	overflow: hidden;
+	height: 28px;
+	display: inline-block;
+	line-height: 28px;
+}
+.xm_topcon{
+	background:#fff;
+	padding:3px 8px;
+	border:2px solid #f34002;
+	border-top:none;
+	border-radius:0px 0px 5px 5px;
+	display:none;
+	z-index: 999;
+	position: absolute;
+}
+
+
+.xm_topcon a{
+	border-bottom:1px dotted #dbdbdb;
+	display:block;
+	margin-top:1px;}
+
+.xm_login .more-hm{
+	float: right;
+	color:#fff;
+	font-size: 12px;
+	font-family: 宋体;
+	margin-right: 8px;
+}
+
+.gzdt-hm{
+	border: 1px solid #fedadb;
+	border-top: 0px none;
+	height: 170px;
+	padding:12px;
+	overflow: hidden;
+}
+
+.gzdt-hm a{
+	display: block;
+	float: left;
+	margin-right: 16px;
+	white-space: normal;
+	font-size: 12px;
+	height: 26px;
+	line-height: 26px;
+}
+
+
+
+/*抽奖*/
+
+.ly-plate{
+
+	position:relative;
+
+	width:509px;
+
+	height:509px;
+
+	margin: 50px auto;
+
+}
+
+.rotate-bg{
+
+	width: 509px;
+
+	height: 509px;
+
+	background: url(../images/ly-plate2.png);
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	margin-top: 0%;
+
+}
+
+.ly-plate div.lottery-star{
+
+	width:214px;
+
+	height:214px;
+
+	position:absolute;
+
+	top:150px;
+
+	left:147px;
+
+	/*text-indent:-999em;
+
+	overflow:hidden;
+
+	background:url(rotate-static.png);
+
+	-webkit-transform:rotate(0deg);*/
+
+	outline:none
+
+}
+
+.ly-plate div.lottery-star #lotteryBtn{
+
+	cursor: pointer;
+
+	position: absolute;
+
+	top:0;
+
+	left:0;
+
+	*left:-107px
+
+}
+
+/*抽奖end*/
